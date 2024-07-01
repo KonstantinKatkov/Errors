@@ -6,13 +6,16 @@ def add_everything_up(a, b):
     try:
         result = a + b
     except TypeError as exc:
-        print(f'Ошибка {exc}: {a}{b} ')
+        print()
+        return f'Ошибка {exc}: {str(a) + str(b)} '
 
     else:
-        print(f'Ошибки нет, результат: {result} ')
+        print()
+        return f'Ошибки нет, результат: {result} '
 
     finally:
-        print("Работа закончена")
+      print("Работа закончена")
+
 
 
 print(add_everything_up(123.456, 'строка'))
